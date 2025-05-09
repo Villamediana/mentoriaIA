@@ -17,9 +17,9 @@ respostas = [0, 0, 1, 1]
 modelo = LogisticRegression()
 modelo.fit(dados, respostas)
 
-# Fruta nova para testar (ex: levemente achatada e lisa)
+# Fruta nova para testar (levemente achatada e lisa)
 nova_fruta = [[0.35, 0]]
 resultado = modelo.predict(nova_fruta)
 
-# Exibir o resultado
-print("Resultado:", "Maçã 🍎" if resultado[0] == 0 else "Laranja 🍊")
+# Resultado
+print("Resultado:", "Maçã" if resultado[0] == 0 else "Laranja")
