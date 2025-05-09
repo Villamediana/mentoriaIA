@@ -25,7 +25,7 @@ umidade_atual = float(input("Umidade (%): "))
 vento_atual = float(input("Vento (km/h): "))
 
 # Organiza os dados digitados no formato que o modelo espera
-clima_atual = pd.DataFrame([[temperatura_atual, umidade_atual, vento_atual]], columns=["temperatura", "umidade", "vento"])
+clima_atual = [[temperatura_atual, umidade_atual, vento_atual]]
 
 
 # Faz a previsão da probabilidade de chover com base nesses dados
